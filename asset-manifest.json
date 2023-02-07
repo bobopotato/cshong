@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cshong/static/css/main.5d7a3450.css",
+    "main.js": "/cshong/static/js/main.9782f7d4.js",
+    "static/media/coding-cat-gif.gif": "/cshong/static/media/coding-cat-gif.6bff444d95e3d9468485.gif",
+    "static/media/flutter.png": "/cshong/static/media/flutter.3ec6f54919d13012590a.png",
+    "static/media/react.png": "/cshong/static/media/react.a6410a181d7f20b3e4c0.png",
+    "static/media/ChongSoonHong_CV.pdf": "/cshong/static/media/ChongSoonHong_CV.a1d2dc65100d75e6a379.pdf",
+    "static/media/nodejs.png": "/cshong/static/media/nodejs.e798e2415560a4d06760.png",
+    "static/media/resume.png": "/cshong/static/media/resume.41c445739ba40bfbc21d.png",
+    "static/media/MsSql.png": "/cshong/static/media/MsSql.7233b3c6376d3b341eda.png",
+    "static/media/swift-og.png": "/cshong/static/media/swift-og.d0cf8dd3a99e6de3edc6.png",
+    "static/media/whatsapp.png": "/cshong/static/media/whatsapp.d443fb30580448a50fce.png",
+    "static/media/javascript.png": "/cshong/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "index.html": "/cshong/index.html",
+    "main.5d7a3450.css.map": "/cshong/static/css/main.5d7a3450.css.map",
+    "main.9782f7d4.js.map": "/cshong/static/js/main.9782f7d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d7a3450.css",
+    "static/js/main.9782f7d4.js"
+  ]
+}
