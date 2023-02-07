@@ -1,0 +1,96 @@
+.hire-me-container {
+    width: 100px;
+    height: 100px;
+    /* background: red; */
+    position: fixed;
+  }
+  
+  .hire-me-text {
+    letter-spacing: calc(var(--common-padding) / 2);
+    color: var(--main-color);
+    font-size: var(--fs-m);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+      1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+      1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+      1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+      1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+      1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
+  
+  .custom-cursor {
+    /* background: blue; */
+    /* opacity: none; */
+  }
+  
+  .cursor-inner {
+    opacity: 0;
+    animation: roll 0.5s infinite ease-in-out;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes backOrigin1 {
+    0% {
+      transform: translateX(-250%) translateY(-50%);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes backOrigin2 {
+    0% {
+      transform: translateX(150%) translateY(-50%);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0;
+    }
+  }
+  
+  .cursor-inner::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    /* left: 50%; */
+    transform: translateX(-250%) translateY(-50%);
+  
+    border-radius: 50%;
+  
+    /* border: 1px solid red; */
+    background: var(--sub-color);
+    animation: backOrigin1 2s infinite linear;
+  }
+  
+  .cursor-inner::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateX(150%) translateY(-50%);
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    background: red;
+    animation: backOrigin2 2s infinite linear;
+  }
+  

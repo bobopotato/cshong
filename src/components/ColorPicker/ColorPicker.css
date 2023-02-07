@@ -1,0 +1,105 @@
+.color-picker-container {
+    width: var(--page-width);
+    position: fixed;
+    top: calc(var(--nav-height));
+    display: flex;
+    flex-direction: column;
+    z-index: 99999;
+    background: var(--color-picker-bg);
+    border-radius: 10px;
+    padding: calc(var(--common-padding) * 2);
+    padding-top: var(--common-padding);
+    transition: 0.5s;
+  }
+  
+  .color-picker-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: var(--common-padding);
+    font-size: var(--fs-m);
+  }
+  
+  .color-picker-header .blank-space {
+    flex: 1;
+  }
+  
+  .color-picker-container h3 {
+    font-weight: 550;
+    color: white;
+    /* background: red; */
+  }
+  
+  .my-checkbox {
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: calc(var(--common-padding) / 2);
+    cursor: pointer;
+  }
+  .my-checkbox input {
+    width: 30px;
+    scale: 1.35;
+    accent-color: var(--main-color);
+  }
+  
+  .my-checkbox label {
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .my-checkbox:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .color-picker {
+    width: 100%;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    outline: none;
+    border-radius: 100vmax;
+    border: var(--txt) 2px solid;
+    transition: all ease 0.5s;
+    background: linear-gradient(
+      to right,
+      hsl(0, 50%, 50%),
+      hsl(25, 50%, 50%),
+      hsl(50, 50%, 50%),
+      hsl(75, 50%, 50%),
+      hsl(100, 50%, 50%),
+      hsl(125, 50%, 50%),
+      hsl(150, 50%, 50%),
+      hsl(175, 50%, 50%),
+      hsl(200, 50%, 50%),
+      hsl(225, 50%, 50%),
+      hsl(250, 50%, 50%),
+      hsl(275, 50%, 50%),
+      hsl(300, 50%, 50%),
+      hsl(325, 50%, 50%),
+      hsl(350, 50%, 50%)
+    );
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(var(--_hue), 100%, 50%);
+    border-radius: 15px;
+    border: var(--txt) solid 3px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,126 @@
+.cube-details-inner-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    scale: 0;
+    cursor: pointer;
+    transition: all 0.6s linear, opacity 0.6s linear, scale 0.6s linear;
+    background: var(--bg);
+    z-index: -5555;
+  }
+  
+  .cube-details-inner-container.active {
+    opacity: 1;
+  }
+  
+  .cube-details-inner-container.prev {
+    opacity: 0.45;
+    scale: 0.65;
+    transform: translateY(-105%);
+  }
+  
+  .cube-details-inner-container.selected {
+    z-index: 101001;
+    scale: 1;
+  }
+  
+  .cube-details-inner-container.next {
+    opacity: 0.45;
+    z-index: -2222;
+    scale: 0.65;
+    transform: translateY(105%);
+  }
+  
+  .cube-card-container {
+    width: 100%;
+    height: 100%;
+    padding: calc(var(--common-padding) * 2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--border);
+  }
+  
+  .cube-details-inner-container.selected .cube-card-container {
+    border: none;
+    box-shadow: 0 0px 18px 0 hsla(var(--_hue), 100%, 50%, 0.5),
+      0 0px 50px 0 hsla(var(--_hue), 100%, 50%, 0.2);
+  }
+  
+  .cube-details-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--fs-m);
+  }
+  
+  .cube-details-desc {
+    font-size: var(--fs-s);
+  
+    display: grid;
+    grid-template-columns: 40% auto auto;
+    gap: calc(var(--common-padding) / 2);
+    text-align: left;
+    align-items: baseline;
+  }
+  
+  .grid-item-1,
+  .grid-item-8 {
+    text-align: left;
+  }
+  
+  .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .grid-item-2,
+  .grid-item-4,
+  .grid-item-6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+  }
+  
+  .grid-item-2::before,
+  .grid-item-4::before,
+  .grid-item-6::before {
+    content: '"';
+  }
+  
+  .grid-item-2::after,
+  .grid-item-4::after,
+  .grid-item-6::after {
+    content: '" : ';
+  }
+  
+  .grid-item-3,
+  .grid-item-5,
+  .grid-item-7 {
+    text-align: left;
+  }
+  
+  .grid-item-3 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: var(--fs-m);
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .cube-details-inner-container.prev {
+      transform: translateX(-105%);
+      opacity: 0;
+      scale: 0;
+    }
+  
+    .cube-details-inner-container.next {
+      transform: translateX(105%);
+      opacity: 0;
+      scale: 0;
+    }
+  }
+  
