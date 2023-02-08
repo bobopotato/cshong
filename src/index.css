@@ -7,6 +7,7 @@ html {
 
 body {
   overflow: hidden;
+  width: 100%;
 }
 
 section {
@@ -116,9 +117,10 @@ section {
   font-family: sans-serif;
   text-align: center;
   height: 100%;
-  width: 99%;
+  width: 99.9%;
   position: fixed;
   overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }

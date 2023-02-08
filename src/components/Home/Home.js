@@ -56,7 +56,7 @@ const Home = () => {
     <div className="home-page" id="home-page">
       <div className="intro-container1" ref={myHomePage}>
         <div>
-          <h3>Desmond Chong</h3>
+          <h3>Ryan Chong</h3>
         </div>
         <h1>
           I am a<span className="multiple-text" ref={multipleText}></span>
