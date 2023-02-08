@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cshong/static/css/main.5d7a3450.css",
-    "main.js": "/cshong/static/js/main.9782f7d4.js",
+    "main.css": "/cshong/static/css/main.a9f8901b.css",
+    "main.js": "/cshong/static/js/main.5181703b.js",
     "static/media/coding-cat-gif.gif": "/cshong/static/media/coding-cat-gif.6bff444d95e3d9468485.gif",
     "static/media/flutter.png": "/cshong/static/media/flutter.3ec6f54919d13012590a.png",
     "static/media/react.png": "/cshong/static/media/react.a6410a181d7f20b3e4c0.png",
@@ -13,11 +13,11 @@
     "static/media/whatsapp.png": "/cshong/static/media/whatsapp.d443fb30580448a50fce.png",
     "static/media/javascript.png": "/cshong/static/media/javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/cshong/index.html",
-    "main.5d7a3450.css.map": "/cshong/static/css/main.5d7a3450.css.map",
-    "main.9782f7d4.js.map": "/cshong/static/js/main.9782f7d4.js.map"
+    "main.a9f8901b.css.map": "/cshong/static/css/main.a9f8901b.css.map",
+    "main.5181703b.js.map": "/cshong/static/js/main.5181703b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d7a3450.css",
-    "static/js/main.9782f7d4.js"
+    "static/css/main.a9f8901b.css",
+    "static/js/main.5181703b.js"
   ]
 }
