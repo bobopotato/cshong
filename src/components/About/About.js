@@ -4,7 +4,7 @@ import LinkedIn from "../../assets/linkedin.png";
 import WhatsApp from "../../assets/whatsapp.png";
 import Resume from "../../assets/resume.png";
 import GithubWhite from "../../assets/github-white.webp";
-import MyCvPdf from "../../assets/ChongSoonHong_CV.pdf";
+import MyCvPdf from "../../assets/desmond_cv.pdf";
 // import UseScrollReveal, { Direction } from "./UseScrollReveal";
 
 const About = () => {
