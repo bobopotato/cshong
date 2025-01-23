@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/cshong/static/css/main.7dfd1748.css",
-    "main.js": "/cshong/static/js/main.cd0cd4fa.js",
+    "main.js": "/cshong/static/js/main.c9a54b08.js",
     "static/media/coding-cat-gif.gif": "/cshong/static/media/coding-cat-gif.6bff444d95e3d9468485.gif",
     "static/media/flutter.png": "/cshong/static/media/flutter.3ec6f54919d13012590a.png",
+    "static/media/desmond_cv.pdf": "/cshong/static/media/desmond_cv.6fcd1bc2732a1b4f2336.pdf",
     "static/media/react.png": "/cshong/static/media/react.a6410a181d7f20b3e4c0.png",
-    "static/media/ChongSoonHong_CV.pdf": "/cshong/static/media/ChongSoonHong_CV.a1d2dc65100d75e6a379.pdf",
     "static/media/nodejs.png": "/cshong/static/media/nodejs.e798e2415560a4d06760.png",
     "static/media/resume.png": "/cshong/static/media/resume.41c445739ba40bfbc21d.png",
     "static/media/MsSql.png": "/cshong/static/media/MsSql.7233b3c6376d3b341eda.png",
@@ -15,10 +15,10 @@
     "static/media/github-white.webp": "/cshong/static/media/github-white.a5b11e9d592ba5e239a6.webp",
     "index.html": "/cshong/index.html",
     "main.7dfd1748.css.map": "/cshong/static/css/main.7dfd1748.css.map",
-    "main.cd0cd4fa.js.map": "/cshong/static/js/main.cd0cd4fa.js.map"
+    "main.c9a54b08.js.map": "/cshong/static/js/main.c9a54b08.js.map"
   },
   "entrypoints": [
     "static/css/main.7dfd1748.css",
-    "static/js/main.cd0cd4fa.js"
+    "static/js/main.c9a54b08.js"
   ]
 }
