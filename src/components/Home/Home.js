@@ -12,13 +12,13 @@ const Home = () => {
 
   UseScrollReveal({
     classNames: ["intro-container1"],
-    direction: Direction.right
+    direction: Direction.right,
   });
 
   UseScrollReveal({
     classNames: ["intro-container2"],
     direction: Direction.right,
-    delay: 800
+    delay: 800,
   });
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Home = () => {
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
-      backDelay: 1500
+      backDelay: 1500,
     };
 
     if (!multipleText) {
@@ -56,7 +56,7 @@ const Home = () => {
     <div className="home-page" id="home-page">
       <div className="intro-container1" ref={myHomePage}>
         <div>
-          <h3>Ryan Chong</h3>
+          <h3>Desmond Chong</h3>
         </div>
         <h1>
           I am a<span className="multiple-text" ref={multipleText}></span>

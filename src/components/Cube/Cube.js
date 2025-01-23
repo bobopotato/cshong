@@ -30,7 +30,7 @@ const Cube = ({ scrollY }) => {
   const _setResizing = (bool) => {
     resizingRef.current = bool;
     return setResizing(bool);
-  }
+  };
 
   // UseScrollReveal({ classNames: ["reveal1", "reveal2"] });
 
@@ -135,15 +135,15 @@ const Cube = ({ scrollY }) => {
     if (resizingRef.current) {
       return; // if resizing then back
     }
-    console.log(`resizing ${scrollY} `)
+    console.log(`resizing ${scrollY} `);
     _setResizing(true);
-    setTimeout(()=> {
+    setTimeout(() => {
       return _setResizing(false);
-    }, 500)
+    }, 500);
     const scrollingContainer = document.querySelector(".App");
-    scrollingContainer.scrollTo(0,0, 'smooth');
+    scrollingContainer.scrollTo(0, 0, "smooth");
     setCheckPoint(null);
-  }
+  };
 
   useEffect(() => {
     if (isVisible && !checkPoint) {
@@ -158,7 +158,7 @@ const Cube = ({ scrollY }) => {
         point3: scrollY + vhHeight * 2,
         point4: scrollY + vhHeight * 3,
         point5: scrollY + vhHeight * 4,
-        point6: scrollY + vhHeight * 5
+        point6: scrollY + vhHeight * 5,
       });
       setResized(false);
     }
@@ -216,8 +216,8 @@ const Cube = ({ scrollY }) => {
           <div className="cube-details-container">
             <CubeDetails
               title="skills[0] ="
-              name="Node js"
-              description="Used for backend to create Api"
+              name="NodeJs - ExpressJs"
+              description="Creating microservices API with GCP & AWS"
               experience="Work & self learn"
               innerClass={getPagerInfo(1)}
               // onPressScrollTo={page1Ref}
@@ -225,7 +225,7 @@ const Cube = ({ scrollY }) => {
             />
             <CubeDetails
               title="skills[1] = "
-              name="React js"
+              name="VueJs & ReactJs + NextJs"
               description="Used for frontend to build up UI/UX"
               experience="Work & self learn"
               innerClass={getPagerInfo(2)}
@@ -234,8 +234,8 @@ const Cube = ({ scrollY }) => {
             />
             <CubeDetails
               title="skills[2] = "
-              name="Javascript"
-              description="Have knowledge of basic javascript"
+              name="Typescript & Javascript"
+              description="Have intermediate knowledge of Typescript & Javascript"
               experience="Work & self learn"
               innerClass={getPagerInfo(3)}
               // onPressScrollTo={page3Ref}
@@ -243,8 +243,8 @@ const Cube = ({ scrollY }) => {
             />
             <CubeDetails
               title="skills[3] = "
-              name="MS SQL"
-              description="Database used to store all the data"
+              name="Database skill"
+              description="Familiar with No-SQL: Firebase & SQL:PostgreSQL"
               experience="Work & education"
               innerClass={getPagerInfo(4)}
               // onPressScrollTo={page4Ref}
@@ -252,18 +252,18 @@ const Cube = ({ scrollY }) => {
             />
             <CubeDetails
               title="skills[4] = "
-              name="Flutter"
-              description="Used to build hybrid mobile application"
-              experience="Work & internship"
+              name="CI/CD Automation"
+              description="Basic CI/CD with Github Actions"
+              experience="Work"
               innerClass={getPagerInfo(5)}
               // onPressScrollTo={page5Ref}
               scrollToPosition={checkPoint?.point5}
             />
             <CubeDetails
               title="skills[5] = "
-              name="Swift"
-              description="Specified language that used to develop ios mobile application"
-              experience="Work & internship"
+              name="Debugging Skill"
+              description="Efficient in bug fixing & code debugging"
+              experience="Work"
               innerClass={getPagerInfo(6)}
               // onPressScrollTo={page6Ref}
               scrollToPosition={checkPoint?.point6}

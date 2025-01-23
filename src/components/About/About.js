@@ -3,6 +3,7 @@ import AboutCube from "./AboutCube/AboutCube";
 import LinkedIn from "../../assets/linkedin.png";
 import WhatsApp from "../../assets/whatsapp.png";
 import Resume from "../../assets/resume.png";
+import GithubWhite from "../../assets/github-white.webp";
 import MyCvPdf from "../../assets/ChongSoonHong_CV.pdf";
 // import UseScrollReveal, { Direction } from "./UseScrollReveal";
 
@@ -25,11 +26,29 @@ const About = () => {
     <div className="about-container" id="about-page">
       <h1 className="about-title">About Me</h1>
       <div className="about-content">
-        I am currently working in <span>Strateq Group</span> as Software
-        Engineer. The project that I am in-charge is <span>SIRIM project</span>.
-        I am responsible for system maintanence and enhancement which I had to
-        standby for technical support as well. The involved technicques that I
-        use is <code>NodeJs</code>, <code>ReactJs</code> and <code>MSSQL</code>.
+        I am currently working in <span>Qashier</span> as Full Stack Developer.
+        I am in charge in both of front-end and back-end.
+      </div>
+      <div className="about-content-2">
+        <div>
+          <span>In charges of:</span>
+          <ul>
+            <li>User Onboarding process</li>
+            <li>KYC application with multiple payment channels</li>
+            <li>Personalized scheduler for different clients</li>
+            <li>System maintanence and enhancement</li>
+            <li>etc</li>
+          </ul>
+        </div>
+        <div>
+          <span>Tech stack:</span>
+          <ul>
+            <li>Server - Google Cloud</li>
+            <li>Backend - NodeJs microservices</li>
+            <li>Frontend - VueJs</li>
+            <li>Database - Firebase & PostgreSQL</li>
+          </ul>
+        </div>
       </div>
       <div className="about-link-container">
         <div className="about-link">
@@ -63,6 +82,16 @@ const About = () => {
             brightness1="45"
             brightness2=" 60"
             download={MyCvPdf}
+          />
+          <AboutCube
+            img={GithubWhite}
+            title="Github"
+            detail="Have a look"
+            hslColor1="hsl(0, 0%,"
+            hslColor2="hsl(0, 0%,"
+            brightness1="10"
+            brightness2="15"
+            link={`https://github.com/bobopotato`}
           />
         </div>
       </div>

@@ -4,6 +4,7 @@ import Menu from "./components/Menu/Menu";
 import Home from "./components/Home/Home";
 import Cube from "./components/Cube/Cube";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 // import HireMe from "./components/HireMe/HireMe";
 // import { useEventListener, AnimatedCursor } from "./useEventListener";
 
@@ -17,8 +18,6 @@ export default function App() {
     return setScrolling(bool);
   };
 
-
-
   useEffect(() => {
     const getScrollPosition = (scrollingContainer) => {
       setScrolling(true);
@@ -31,13 +30,13 @@ export default function App() {
       return setScrollY(scrollingContainer.scrollTop);
       // return console.log(scrollingContainer.scrollTop);
     };
-    
+
     const scrollingContainer = document.querySelector(".App");
     scrollingContainer.addEventListener(
       "scroll",
       (e) => getScrollPosition(scrollingContainer),
       {
-        passive: true
+        passive: true,
       }
     );
 
